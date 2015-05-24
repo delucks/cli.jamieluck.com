@@ -4,3 +4,26 @@ html {
 img {
   border-radius: 30px;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+#term {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 12px;
+}	
+
+.floating {
+	background-color: #111111;
+	box-shadow: 5px 5px 10px #111111;
+	padding: 10px;
+	font-size: 12px;
+}
+
+#term {
+	position: relative;
+}
+@media only screen and (max-width: 1000px) {
+  #term {
+    display: none;
+  }
+}

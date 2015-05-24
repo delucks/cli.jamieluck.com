@@ -12,12 +12,18 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 	<link rel="stylesheet" href="fonts/css/delucks.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-terminal.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+  <script type="text/javascript" src="js/interpreter.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery-terminal.css"/>
 </head>
 <body>
   <div class="container">
     <div class="row">
       <div class="one-third column" style="margin-top: 10%">
-				<img src="images/headshot.jpg" class="u-max-full-width"/>
+				<img src="images/headshot.jpg" id="headshot" class="u-max-full-width"/>
 				<div style="text-align:center" >
 					<h4>delucks</h4><a style="font-size:1.2em;text-decoration:none" href="http://blog.jamesluck.com"><b>blog</b></a>
 				</div>
@@ -36,6 +42,9 @@
 					My name is James Luck, and this is my website.
 					<br>I'm a computer scientist living in Newark, Delaware.
 				</p>
+        <p>
+          <div id="term" class="notfloating"></div>
+        </p>
 				<p>
 					<b>Current</b><br>
 					I build programs to improve and automate my daily life. I also write a lot of code for school assignments and maintain a home computer lab to experiment with technology in.
