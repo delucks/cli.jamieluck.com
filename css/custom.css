@@ -1,7 +1,7 @@
 html {
 	font-size: 0.7rem;
 }
-img {
+#headshot {
   border-radius: 30px;
 }
 
@@ -21,9 +21,26 @@ img {
 
 #term {
 	position: relative;
+  border-radius: 3px;
 }
 @media only screen and (max-width: 1000px) {
   #term {
     display: none;
   }
+}
+.heading {
+  font-size: 2em;
+}
+.portfolio-heading {
+  font-size: 1.5em;
+  text-align: right;
+  line-height: normal;
+}
+.portfolio-image {
+  -moz-box-shadow:    3px 3px 10px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 10px 1px #ccc;
+  box-shadow:         3px 3px 10px 1px #ccc;
+}
+.row {
+  padding-bottom: 10px;
 }
