@@ -1,5 +1,6 @@
 /* interpreter.js
  * part of delucks' site additions, 05/24/2015
+ * was changed a bunch of times since then
  */
 
 // Websites that we'll use throughout the document
@@ -95,8 +96,8 @@ $(document).ready(function() {
 				<span style='color: #526f33'>jamesluck </span> DOT <span style='color: #526f33'>com</span><br \><br \>\
 				If you want to get to me faster, find me on IRC:<br \>\
 				username: <span style='color: #526f33'>delucks</span><br \>\
-				network: <span style='color: #526f33'>&#160irc.blinkenshell.org</span><br \>\
-				channel: <span style='color: #526f33'>&#160#blinkenshell</span></span>\
+				network: <span style='color: #526f33'>&#160irc.lug.udel.edu</span><br \>\
+				channel: <span style='color: #526f33'>&#160#lug</span></span>\
 				<br>\
 				", {raw: true});
 		},
