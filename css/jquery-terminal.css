@@ -37,7 +37,7 @@
 }
 
 .terminal {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: monospace;
     color: #dddddd; /* Terminal output */
     background-color: #111111;
     font-size: 12px;

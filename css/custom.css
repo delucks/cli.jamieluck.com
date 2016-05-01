@@ -1,46 +1,50 @@
+/* CSS for www.jamesluck.com 
+ * author: delucks
+ */
+
 html {
-	font-size: 0.7rem;
-}
-#headshot {
-  border-radius: 30px;
-}
-
-@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
-
-#term {
-	font-family: 'Share Tech Mono', monospace;
-	font-size: 12px;
-}	
-
-.floating {
-	background-color: #111111;
-	box-shadow: 5px 5px 10px #111111;
-	padding: 10px;
-	font-size: 12px;
+  font-size: 12px;
+  color: #000;
+  background-color: #ddd;
+  font-family: monospace;
 }
 
-#term {
-	position: relative;
-  border-radius: 3px;
+#container {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-@media only screen and (max-width: 1000px) {
-  #term {
-    display: none;
-  }
-}
-.heading {
-  font-size: 2em;
-}
-.portfolio-heading {
+
+.header {
   font-size: 1.5em;
-  text-align: right;
-  line-height: normal;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.portfolio-image {
-  -moz-box-shadow:    3px 3px 10px 1px #ccc;
-  -webkit-box-shadow: 3px 3px 10px 1px #ccc;
-  box-shadow:         3px 3px 10px 1px #ccc;
+
+.topic {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
 }
-.row {
-  padding-bottom: 10px;
+
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+/* Styles of the terminal */
+
+#term {
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#term a {
+  color: #fff;
 }
