@@ -37,11 +37,7 @@ var ping_output = "PING www.jamesluck.com (127.0.0.1) 56(84) bytes of data.\n" +
 "1 packets transmitted, 1 received, 0% packet loss, time 0ms\n" +
 "rtt min/avg/max/mdev = 0.001/0.001/0.001/0.000 ms"
 
-var contact_output = "<pre>echo 'nv(qznvhofxp)xln' | tr \"$(echo {z..a} | tr -d ' ')()\" 'a-z@.' # email</pre>" +
-"If you want to get to me faster, find me on IRC:<br>" +
-"username: <span style='color: #526f33'>delucks</span><br>" +
-"network: <span style='color: #526f33'>&#160irc.lug.udel.edu</span><br>" +
-"channel: <span style='color: #526f33'>&#160#lug</span></span><br>"
+var contact_output = "<pre>echo 'nv(qznvhofxp)xln' | tr \"$(echo {z..a} | tr -d ' ')()\" 'a-z@.' # email</pre>"
 
 // Set up the terminal
 $(document).ready(function() {
