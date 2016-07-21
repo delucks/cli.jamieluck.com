@@ -2,10 +2,10 @@
  */
 
 // Websites that we'll use throughout the document
-var home = 'http://www.jamesluck.com';
+var home = 'https://jamesluck.com';
 var github = 'https://github.com/delucks';
 var linkedin = 'https://www.linkedin.com/in/jamieluck';
-var resume = 'http://www.jamesluck.com/JamesLuckResume.pdf';
+var resume = 'https://jamesluck.com/JamesLuckResume.pdf';
 var lastfm = 'https://www.last.fm/user/delucks';
 var links = [
 	[".", home],
@@ -31,9 +31,9 @@ var help_output = "<table><tr>" +
 "<td><span style='color: #526f33'>exit</span></td><td>exit to my graphical website</td>" +
 "</tr></table>"
 
-var ping_output = "PING www.jamesluck.com (127.0.0.1) 56(84) bytes of data.\n" +
-"64 bytes from www.jamesluck.com: icmp_seq=1 ttl=59 time=0.001 ms\n\n" +
-"--- www.jamesluck.com ping statistics ---\n" +
+var ping_output = "PING jamesluck.com (127.0.0.1) 56(84) bytes of data.\n" +
+"64 bytes from jamesluck.com: icmp_seq=1 ttl=59 time=0.001 ms\n\n" +
+"--- jamesluck.com ping statistics ---\n" +
 "1 packets transmitted, 1 received, 0% packet loss, time 0ms\n" +
 "rtt min/avg/max/mdev = 0.001/0.001/0.001/0.000 ms"
 
