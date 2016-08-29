@@ -49,6 +49,17 @@ ul {
   color: #fff;
 }
 
+#term .term-green {
+  color: #526f33;
+}
+
+#term td,th {
+  border: none;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 8px;
+}
+
 @media only screen and (max-width: 1000px) {
   #term {
     display: none;
