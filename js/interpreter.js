@@ -104,9 +104,6 @@ $(document).ready(function() {
     height: '99%', /* cannot do 100% because it obscures the prompt for whatever reason */
     exit: false,
     convertLinks: false,
-		greetings:greeter
+		greetings: 'Hi! If you want to see a more traditional website, type \'exit\'\nThe command "help" is a good starting place.'
 		});
-	function greeter() {
-		return 'Hi! If you want to see a more traditional website, type \'exit\'\nThe command "help" is a good starting place.'
-	}
 });
