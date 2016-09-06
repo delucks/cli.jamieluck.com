@@ -2,7 +2,7 @@
  */
 
 // Websites that we'll use throughout the document
-var home = 'https://jamesluck.com';
+var home = location.protocol+'//'+location.hostname+":"+location.port+"/";
 var github = 'https://github.com/delucks';
 var linkedin = 'https://www.linkedin.com/in/jamieluck';
 var resume = 'https://jamesluck.com/JamesLuckResume.pdf';
@@ -31,9 +31,9 @@ var help_output = "<table><tr>" +
 "<td><span class='term-green'>exit</span></td><td>exit to my graphical website</td>" +
 "</tr></table>";
 
-var ping_output = "PING jamesluck.com (127.0.0.1) 56(84) bytes of data.\n" +
-"64 bytes from jamesluck.com: icmp_seq=1 ttl=59 time=0.001 ms\n\n" +
-"--- jamesluck.com ping statistics ---\n" +
+var ping_output = "PING " + location.hostname + " (127.0.0.1) 56(84) bytes of data.\n" +
+"64 bytes from "+location.hostname+": icmp_seq=1 ttl=59 time=0.001 ms\n\n" +
+"--- "+location.hostname+" ping statistics ---\n" +
 "1 packets transmitted, 1 received, 0% packet loss, time 0ms\n" +
 "rtt min/avg/max/mdev = 0.001/0.001/0.001/0.000 ms";
 
@@ -100,7 +100,7 @@ $(document).ready(function() {
       this.echo(contact_output, {raw: true});
 		},
 	}, {
-		prompt: 'visitor@jamesluck.com:~$ ', 
+		prompt: "visitor@"+location.hostname+":~$ ", 
     height: '99%', /* cannot do 100% because it obscures the prompt for whatever reason */
     exit: false,
     convertLinks: false,
