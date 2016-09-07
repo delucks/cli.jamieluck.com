@@ -1,11 +1,15 @@
 /* interpreter.js
  */
 
+// base64-encoded `figlet` strings
+var ie_banner = 'ICAgICAgXyAgICAgICAgICAgIF8gICAgIF9fICAgICAgICAgX18gICAgICAgICAgICAgICAgIAogICAgIChfKV9fIF9fXyBfICAoXylfXyAvIC9fIF9fX19fXy8gL19fIF9fX19fX18gIF9fIF8gCiAgICAvIC8gXyBgLyAgJyBcLyAvIC1fKSAvIC8vIC8gX18vICAnXy8vIF9fLyBfIFwvICAnIFwKIF9fLyAvXF8sXy9fL18vXy9fL1xfXy9fL1xfLF8vXF9fL18vXF8oXylfXy9cX19fL18vXy9fLwp8X19fLyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCg=='
+var es_banner = 'ICAgICAgXyAgICAgICAgICAgICAgICAgICAgX18gICAgICAgICBfXyAgICAgICAgICAgICAgICAgCiAgICAgKF8pX18gX19fIF8gIF9fXyBfX18gLyAvXyBfX19fX18vIC9fXyBfX19fX19fICBfXyBfIAogICAgLyAvIF8gYC8gICcgXC8gLV98Xy08LyAvIC8vIC8gX18vICAnXy8vIF9fLyBfIFwvICAnIFwKIF9fLyAvXF8sXy9fL18vXy9cX18vX19fL18vXF8sXy9cX18vXy9cXyhfKV9fL1xfX18vXy9fL18vCnxfX18vICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo='
+var banner = location.hostname == 'jamesluck.com' ? es_banner : ie_banner;
 // Websites that we'll use throughout the document
 var home = location.protocol+'//'+location.hostname+":"+location.port+"/";
 var github = 'https://github.com/delucks';
 var linkedin = 'https://www.linkedin.com/in/jamieluck';
-var resume = 'https://jamesluck.com/JamesLuckResume.pdf';
+var resume = home + 'JamesLuckResume.pdf';
 var lastfm = 'https://www.last.fm/user/delucks';
 var links = [
 	[".", home],
@@ -104,6 +108,6 @@ $(document).ready(function() {
     height: '99%', /* cannot do 100% because it obscures the prompt for whatever reason */
     exit: false,
     convertLinks: false,
-		greetings: 'Hi! If you want to see a more traditional website, type \'exit\'\nThe command "help" is a good starting place.'
+		greetings: window.atob(banner) + '\nHi! If you want to see a more traditional website, type \'exit\'\nThe command "help" is a good starting place.'
 		});
 });
