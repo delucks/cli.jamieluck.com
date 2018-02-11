@@ -8,12 +8,14 @@ var banner = location.hostname == 'jamesluck.com' ? es_banner : ie_banner;
 // Websites that we'll use throughout the document
 var home = location.protocol+'//'+location.hostname+":"+location.port+"/";
 var github = 'https://github.com/delucks';
+var blog = 'https://delucks.github.io/blog/';
 var linkedin = 'https://www.linkedin.com/in/jamieluck';
 var resume = home + 'JamesLuckResume.pdf';
 var lastfm = 'https://www.last.fm/user/delucks';
 var links = [
 	[".", home],
 	["github", github],
+	["blog", blog],
 	["linkedin", linkedin],
 	["resume", resume],
 	["lastfm", lastfm]
