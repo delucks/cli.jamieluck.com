@@ -11,14 +11,12 @@ var github = 'https://github.com/delucks';
 var blog = 'https://delucks.github.io/blog/';
 var linkedin = 'https://www.linkedin.com/in/jamieluck';
 var resume = home + 'JamesLuckResume.pdf';
-var lastfm = 'https://www.last.fm/user/delucks';
 var links = [
 	[".", home],
 	["github", github],
 	["blog", blog],
 	["linkedin", linkedin],
-	["resume", resume],
-	["lastfm", lastfm]
+	["resume", resume]
 ];
 
 var help_output = "<table><tr>" +
@@ -75,8 +73,8 @@ $(document).ready(function() {
 				case "resume":
 					window.open(resume,'_blank');
 					break;
-				case "lastfm":
-					window.open(lastfm,'_blank');
+				case "blog":
+					window.open(blog,'_blank');
 					break;
         case "..":
           this.echo("You're at the top level, silly");
