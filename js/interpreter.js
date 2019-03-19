@@ -40,7 +40,7 @@ var ping_output = "PING " + location.hostname + " (127.0.0.1) 56(84) bytes of da
 "1 packets transmitted, 1 received, 0% packet loss, time 0ms\n" +
 "rtt min/avg/max/mdev = 0.001/0.001/0.001/0.000 ms";
 
-var contact_output = "<pre>echo 'nv(qznvhofxp)xln' | tr \"$(echo {z..a} | tr -d ' ')()\" 'a-z@.' # email</pre>";
+var contact_output = "<pre>echo 'krmt(qznrvofxp)xln' | tr \"$(echo {z..a} | tr -d ' ')()\" 'a-z@.' # email</pre>";
 
 // Set up the terminal
 $(document).ready(function() {
